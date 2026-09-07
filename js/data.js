@@ -177,7 +177,7 @@ const PORTAL_DATA = {
         "files-3m-3": ["Opdrachtomschrijving", "Beoordelingsformulier", "Tutorials"],
         "files-3m-4": ["Programmaboekje A-Opdracht", "Programmaboekje B-Opdracht", "Docentenhandleiding", "Beoordelingsformulier A", "Beoordelingsformulier B", "Tutorials & Bronnen"],
         "files-4m-1": [
-            { naam: "PWS Handleiding", url: "docs/4m-pws/Project-Beroep-in-Beeld-PWS-26-27-v2.docx" },
+            { naam: "PWS Handleiding", url: "docs/4m-pws/Project-Beroep-in-Beeld-PWS-26-27-v3.docx" },
             "Beoordelingsformulier"
         ],
         "files-4m-2": ["Programmaboekje", "Format Plan van Aanpak", "Rubric Beoordeling", "Tutorials"],
