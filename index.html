@@ -312,8 +312,11 @@
                         <div class="font-mono-tech text-[10px] text-gray-400 mb-1">FASE 04</div>
                         <div class="tab-title font-bold text-white group-hover:text-[#9d00ff] transition-colors">Portfolio</div>
                     </button>
+                    <button type="button" onclick="switchTab('4m', 'tab-4m-5', this)" class="tab-btn tab-btn-maatwerk pro-panel px-4 py-3 text-left group">
+                        <div class="tab-title font-bold text-white group-hover:text-[#e8b84a] transition-colors">Maatwerk</div>
+                    </button>
                 </div>
-                <div class="portal-content w-full md:w-2/3 lg:w-3/4 pro-panel purple-glow p-6">
+                <div class="portal-content w-full md:w-2/3 lg:w-3/4 pro-panel purple-glow p-6" id="portal-content-4m">
                     <div id="tab-4m-1" class="tab-content content-4m active">
                         <div class="flex justify-between items-start mb-4 border-b border-white/10 pb-3">
                             <div>
@@ -353,6 +356,15 @@
                             <span class="font-mono-tech text-[10px] bg-[#9d00ff]/20 text-[#9d00ff] px-2 py-1 rounded hidden" data-actief-badge="tab-4m-4">ACTIEF</span>
                         </div>
                         <div class="space-y-2" id="files-4m-4"></div>
+                    </div>
+                    <div id="tab-4m-5" class="tab-content content-4m">
+                        <div class="flex justify-between items-start mb-4 border-b border-[#e8b84a]/25 pb-3">
+                            <div>
+                                <h2 class="text-2xl font-bold text-white">Maatwerk</h2>
+                                <p class="text-gray-400 text-xs mt-1">Alleen voor leerlingen die van 3 havo naar 4 mavo zijn gegaan.</p>
+                            </div>
+                        </div>
+                        <div class="space-y-2" id="files-4m-5"></div>
                     </div>
                 </div>
             </div>

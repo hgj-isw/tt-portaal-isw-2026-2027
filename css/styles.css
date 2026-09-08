@@ -304,6 +304,24 @@ body {
 }
 .tab-btn.active-green .tab-title { color: var(--neon-greenish) !important; }
 
+/* Maatwerk: subtiel afwijkend (amber, gestippelde rand) — niet voor iedereen */
+.tab-btn-maatwerk {
+    border-left: 4px dashed rgba(232, 184, 74, 0.45) !important;
+    border-top-color: rgba(232, 184, 74, 0.2) !important;
+    background: linear-gradient(145deg, rgba(232, 184, 74, 0.06) 0%, rgba(5, 6, 10, 0.75) 100%);
+}
+.tab-btn.active-maatwerk {
+    background: linear-gradient(145deg, rgba(232, 184, 74, 0.14) 0%, rgba(5, 6, 10, 0.9) 100%) !important;
+    border-left: 4px dashed #e8b84a !important;
+    box-shadow: inset 5px 0 15px rgba(232, 184, 74, 0.08) !important;
+    border-top-color: rgba(232, 184, 74, 0.45) !important;
+}
+.tab-btn.active-maatwerk .tab-title { color: #e8b84a !important; }
+.portal-content.maatwerk-glow {
+    border-top-color: rgba(232, 184, 74, 0.35) !important;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6), 0 0 24px rgba(232, 184, 74, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
 /* Portal-pagina's: compacte keuzemenu's op mobiel */
 @media (max-width: 767px) {
     .portal-layout { gap: 0.45rem; }
@@ -344,8 +362,17 @@ body {
         border-bottom: 3px solid var(--neon-greenish) !important;
         box-shadow: inset 0 -8px 16px rgba(0, 255, 204, 0.08) !important;
     }
+    .portal-menu .tab-btn-maatwerk {
+        border-left-width: 0 !important;
+        border-bottom: 3px dashed rgba(232, 184, 74, 0.45);
+    }
+    .portal-menu .tab-btn.active-maatwerk {
+        border-left-width: 0 !important;
+        border-bottom: 3px dashed #e8b84a !important;
+        box-shadow: inset 0 -8px 16px rgba(232, 184, 74, 0.08) !important;
+    }
 
-    .portal-menu .tab-btn > div:first-child { display: none; }
+    .portal-menu .tab-btn:not(.tab-btn-maatwerk) > div:first-child { display: none; }
 
     .portal-menu .tab-title {
         font-size: 0.68rem;

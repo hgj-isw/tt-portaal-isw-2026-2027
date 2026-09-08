@@ -40,7 +40,8 @@ function initBestanden() {
         'files-4m-1': ['bg-[#9d00ff]/10', 'text-[#9d00ff]', 'text-[#9d00ff]'],
         'files-4m-2': ['bg-[#9d00ff]/10', 'text-[#9d00ff]', 'text-[#9d00ff]'],
         'files-4m-3': ['bg-[#9d00ff]/10', 'text-[#9d00ff]', 'text-[#9d00ff]'],
-        'files-4m-4': ['bg-[#9d00ff]/10', 'text-[#9d00ff]', 'text-[#9d00ff]']
+        'files-4m-4': ['bg-[#9d00ff]/10', 'text-[#9d00ff]', 'text-[#9d00ff]'],
+        'files-4m-5': ['bg-[#e8b84a]/10', 'text-[#e8b84a]', 'text-[#e8b84a]']
     };
     Object.entries(PORTAL_DATA.bestanden).forEach(([id, items]) => {
         const [bg, txt, icon] = cfg[id];
@@ -51,10 +52,21 @@ function initBestanden() {
 function switchTab(groep, targetId, btnElement) {
     document.querySelectorAll(`.content-${groep}`).forEach(c => c.classList.remove('active'));
     const container = document.getElementById(`menu-${groep}`);
-    const activeClass = groep === '3m' ? 'active-cyan' : (groep === '4m' ? 'active-purple' : 'active-green');
-    container.querySelectorAll('.tab-btn').forEach(b => b.classList.remove(activeClass));
+    const isMaatwerk = targetId === 'tab-4m-5';
+    const activeClass = groep === '3m'
+        ? 'active-cyan'
+        : (groep === '4m' ? (isMaatwerk ? 'active-maatwerk' : 'active-purple') : 'active-green');
+    container.querySelectorAll('.tab-btn').forEach(b => {
+        b.classList.remove('active-cyan', 'active-purple', 'active-green', 'active-maatwerk');
+    });
     document.getElementById(targetId).classList.add('active');
     btnElement.classList.add(activeClass);
+
+    const content4m = document.getElementById('portal-content-4m');
+    if (content4m) {
+        content4m.classList.toggle('maatwerk-glow', isMaatwerk);
+        content4m.classList.toggle('purple-glow', !isMaatwerk);
+    }
     schedulePageHeightUpdate();
 }
 

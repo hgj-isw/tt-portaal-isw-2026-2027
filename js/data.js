@@ -182,7 +182,10 @@ const PORTAL_DATA = {
         ],
         "files-4m-2": ["Programmaboekje", "Format Plan van Aanpak", "Rubric Beoordeling", "Tutorials"],
         "files-4m-3": ["Programmaboekje", "Docentenhandleiding", "Eisen Meesterproef", "Presentatie Richtlijnen"],
-        "files-4m-4": ["Portfolio Format", "Reflectievragen"]
+        "files-4m-4": ["Portfolio Format", "Reflectievragen"],
+        "files-4m-5": [
+            { naam: "Instructieboekje maatwerk", url: "docs/4m-maatwerk/Instructieboekje-maatwerk.docx" }
+        ]
     }
 };
 
