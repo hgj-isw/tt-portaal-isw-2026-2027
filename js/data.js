@@ -180,7 +180,12 @@ const PORTAL_DATA = {
             { naam: "PWS Handleiding", url: "docs/4m-pws/Project-Beroep-in-Beeld-PWS-26-27-v3.docx" },
             "Beoordelingsformulier"
         ],
-        "files-4m-2": ["Programmaboekje", "Format Plan van Aanpak", "Rubric Beoordeling", "Tutorials"],
+        "files-4m-2": [
+            { naam: "Programmaboekje", url: "docs/4m-pva/Programmaboekje-PvA.docx" },
+            "Format Plan van Aanpak",
+            "Rubric Beoordeling",
+            "Tutorials"
+        ],
         "files-4m-3": ["Programmaboekje", "Docentenhandleiding", "Eisen Meesterproef", "Presentatie Richtlijnen"],
         "files-4m-4": ["Portfolio Format", "Reflectievragen"],
         "files-4m-5": [
