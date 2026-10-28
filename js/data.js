@@ -173,7 +173,13 @@ const PORTAL_DATA = {
             { naam: "Leerlingenboekje", url: "docs/3m-blok-a/Leerlingenboekje-Vaardigheidsblok-A.docx" },
             { naam: "PPT schaal tekenen", url: "docs/3m-blok-a/PPT-schaal-tekenen.pptx" }
         ],
-        "files-3m-2": ["Programmaboekje A-Opdracht", "Programmaboekje B-Opdracht", "Docentenhandleiding", "Beoordelingsformulier A", "Beoordelingsformulier B", "Tutorials & Bronnen"],
+        "files-3m-2": [
+            { naam: "Programmaboekje A-Opdracht", url: "docs/3m-project-1/Programmaboekje-A-Starterswoning.docx" },
+            { naam: "Programmaboekje B-Opdracht", url: "docs/3m-project-1/Programmaboekje-B-Zorgpod.docx" },
+            "Beoordelingsformulier A",
+            "Beoordelingsformulier B",
+            "Tutorials & Bronnen"
+        ],
         "files-3m-3": ["Opdrachtomschrijving", "Beoordelingsformulier", "Tutorials"],
         "files-3m-4": ["Programmaboekje A-Opdracht", "Programmaboekje B-Opdracht", "Docentenhandleiding", "Beoordelingsformulier A", "Beoordelingsformulier B", "Tutorials & Bronnen"],
         "files-4m-1": [
